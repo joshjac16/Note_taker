@@ -21,4 +21,20 @@ app.post("/api/notes", function (req, res) {
   res.json(db);
 });
 
+app.delete("/api/notes/:id", function (req, res) {
+  let tempNotes = []
+  db.forEach(element => {
+    if(element.id != req.params.id){
+      tempNotes.push(element)
+    }
+  })
+  db = tempNotes
+  fs.writeFileSync("./db/db.json", JSON.stringify(db), function (err) {
+    if (err) throw err;
+  });
+
+  res.json(db);
+});
+
+
 module.exports = app;
