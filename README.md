@@ -39,7 +39,7 @@ npm start
 4. To view a note, simply click on its title in the list.
 5. To delete a note, click on the trash icon next to the note in the list.
 
-## Screenshot 
+![Note_taker](https://github.com/joshjac16/Note_taker/assets/130494193/9b547048-b486-4242-b139-5371c44c0c54)
 
 ## Technologies Used 
 
